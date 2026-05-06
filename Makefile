@@ -11,8 +11,8 @@ all: test_p48
 test_p48: src/test_p48.c src/p48.h
 	$(CC) $(CFLAGS) -o test_p48 src/test_p48.c $(LDFLAGS)
 
-test: test_p48
-	./test_p48
+bench: bench_p48
+	./bench_p48
 
 clean:
 	rm -f test_p48 *.o
